@@ -1,33 +1,36 @@
+import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        //statement
-        int a;
-
-        boolean rijbewijsBehaald =true;
-        //Operator
-        //Operation
         Scanner s = new Scanner(System.in);
-        a = s.nextInt();
 
-        //Conditional
-        //if(){}else if(){}else{}
+        String[] tegelMaten = new String[6];
 
-        if(a > 50){
-            System.out.println("hallo");
-        }else if(a == 5){
-            System.out.println("hoi");
-        }else if(a == 6){
-            System.out.println("doei");
-        }else if(a == 18){
-            if(rijbewijsBehaald){
-                System.out.println("gefeliciteerd met je rijbewijs");
-            }
+        tegelMaten[0] = "10*10";
+        tegelMaten[1] = "60*60";
+        tegelMaten[2] = "80*80";
+        tegelMaten[3] = "100*100";
+        tegelMaten[4] = "200*40";
+        tegelMaten[5] = "50*40";
 
+        for(int i = 0; i < tegelMaten.length; i++){
+            System.out.println(tegelMaten[i]);
         }
 
+        int[] broekMaten = {32,30,28,26};
 
+        for(int i = 0; i < broekMaten.length; i++){
+            System.out.println(broekMaten[i]);
+        }
+
+        String naam = "";
+        System.out.println(naam.isEmpty());
+        if(naam.isEmpty()){
+            System.out.println("vul je naam in");
+            naam = s.next();
+        }
+        System.out.println(naam);
     }
 }
