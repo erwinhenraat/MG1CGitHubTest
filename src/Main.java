@@ -4,33 +4,50 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        //for loop
+        //een aantal keer
+        //Ik wil 10 x mijn naam invullen
+
+        String[] names = {"Piet", "Klaas", "Jan", "Kees", "Barry", "Hendrik", "Annette", "Jaqueline", "Harry"};
+
+/*
+        for(int i = 0; i < names.length; i++){
+            System.out.println(names[i]);
+        }
+
+        for(String item : names){
+            System.out.println(item);
+        }
+*/
+        System.out.println("Wat is je naam? ");
         Scanner s = new Scanner(System.in);
+        String name = s.next();
 
-        String[] tegelMaten = new String[6];
-
-        tegelMaten[0] = "10*10";
-        tegelMaten[1] = "60*60";
-        tegelMaten[2] = "80*80";
-        tegelMaten[3] = "100*100";
-        tegelMaten[4] = "200*40";
-        tegelMaten[5] = "50*40";
-
-        for(int i = 0; i < tegelMaten.length; i++){
-            System.out.println(tegelMaten[i]);
+        for(int i = name.length()-1; i >= 0 ; i--){
+            System.out.println("Hallo ");
+            System.out.println(name.charAt(i));
         }
 
-        int[] broekMaten = {32,30,28,26};
 
-        for(int i = 0; i < broekMaten.length; i++){
-            System.out.println(broekMaten[i]);
+
+        while(!name.equals("Erwin")){
+            System.out.println("je bent erwin niet,  vul je naam in");
+            name = s.next();
         }
 
-        String naam = "";
-        System.out.println(naam.isEmpty());
-        if(naam.isEmpty()){
-            System.out.println("vul je naam in");
-            naam = s.next();
-        }
-        System.out.println(naam);
+        System.out.println("Hoi Erwin");
+
+
+        do{
+
+        }while();
+
+
+
+        //while loop
+        //voorwaardelijk
+        //ik wil mijn naam invullen zolang deze niet goed is ingevuld
+
+
     }
 }
