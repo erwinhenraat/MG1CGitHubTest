@@ -19,8 +19,24 @@ public class Main {
             System.out.println(item);
         }
 
-
         //code uitvoert zolang iets waar is
+        Scanner s = new Scanner(System.in);
+        String name;
+        /*
+        = s.nextLine();
+
+        while(!name.equals("Erwin Henraat")){
+            System.out.println("Jij bent Erwin Niet!!!! ");
+            name = s.nextLine();
+        }
+
+        System.out.println("Hoera Erwin is er!!!!");
+*/
+        do{
+            System.out.println("vul je naam in zolang het maar Erwin Henraat is.");
+            name = s.nextLine();
+        }while(!name.equals("Erwin Henraat"));
+        System.out.println("Hoera Erwin is er!!!!");
 
     }
 }
